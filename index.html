@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,latin-ext"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__container container">
+				<div class="logo-box">
+					<div class="logo">
+						<a href="#" class="logo__link"
+							><img src="img/logo.png" alt="Cifrovoy Ray" class="logo__img" />
+						</a>
+					</div>
+					<div class="delivery-info">
+						<h4 class="delivery-info__text">
+							Оптовые поставки аксессуаров с быстрой доставкой по РФ и СНГ
+						</h4>
+					</div>
+				</div>
+				<div class="contact-box">
+					<div class="contact">
+						<span class="contact__number">8 800 555-41-33</span>
+						<span class="contact__mode">Бесплатно по РФ, круглосуточно</span>
+					</div>
+					<a href="#" class="contact__button btn--gradient">Заказать звонок</a>
+				</div>
+			</div>
+			<nav class="nav">
+				<div class="nav-container container">
+					<input type="checkbox" class="nav__checkbox" id="navi-toggle" />
+					<label for="navi-toggle" class="nav__button">
+						<svg
+							class="ham hamRotate ham4"
+							viewbox="0 0 100 100"
+							width="70"
+							onclick="this.classList.toggle('active')"
+						>
+							<path
+								class="line top"
+								d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+							/>
+							<path class="line middle" d="m 70,50 h -40" />
+							<path
+								class="line bottom"
+								d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+							/>
+						</svg>
+					</label>
+					<ul class="menu">
+						<li class="menu__item">
+							<a href="#" class="menu__link">Выгоды</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Ассортимент</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Ваша прибыль</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">7 Преимуществ</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Шоу-румы</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Схема роботы</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Как найти</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Партнеры</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main class="main">
+			<section class="baner">
+				<div class="baner-container container">
+					<h2 class="heading">
+						<span class="heading__text-1">
+							Оптовая подажа аксессуаров для Apple, Samsung,
+						</span>
+						<span class="heading__text-2">
+							Xiaomi, Meizu, Huawei и других
+						</span>
+						<span class="heading__text-3">
+							Минимальная сумма заказа 15 000 рублей
+						</span>
+					</h2>
+					<div class="form form--bg">
+						<p class="form__heading">
+							Оставьте номер телефона, и наш менеджер предложит вам подробную
+							информацию по нашим ценам и подберет прайс-лист исходя из задач
+							Вашего бизнеса
+						</p>
+						<form action="#" class="form__lead">
+							<input
+								type="tel"
+								name="phone"
+								id="phone"
+								class="form__input
+							input--size-m input--margin-m"
+								placeholder="Введите телефон"
+							/>
+							<input
+								type="submit"
+								name="submit"
+								id="submit"
+								class="form__submit btn--gradient input--size-m"
+								value="Получить доступ"
+							/>
+						</form>
+						<span class="form__policy"
+							>Ваши данные не будут переданы третьим лицам</span
+						>
+					</div>
+					<div class="advantage">
+						<h5 class="advantage__text">Более 12.500 моделей</h5>
+						<h5 class="advantage__text">
+							Прямые поставки мировых брендов из США, Европы и Азии
+						</h5>
+						<h5 class="advantage__text">Цены ниже рыночных</h5>
+					</div>
+				</div>
+			</section>
+			<section class="section price">
+				<h3 class="section__heading">Наш ассортимент</h3>
+				<div class="price__card-box container">
+					<figure class="price__card">
+						<img
+							src="img/item-1.jpg"
+							alt="Чехол для телефона"
+							class="price__img"
+						/>
+						<p class="price__desc">
+							Чехлы для любого IPad
+							<span class="price__desc--blue"> от&nbsp;275₽</span>
+						</p>
+					</figure>
+					<figure class="price__card">
+						<img
+							src="img/item-2.jpg"
+							alt="Чехол для телефона"
+							class="price__img"
+						/>
+						<p class="price__desc">
+							Чехлы для любого IPhone
+							<span class="price__desc--blue"> от&nbsp;600₽</span>
+						</p>
+					</figure>
+					<figure class="price__card">
+						<img
+							src="img/item-3.jpg"
+							alt="Чехол для телефона"
+							class="price__img"
+						/>
+						<p class="price__desc">
+							Противоударные чехлы для IPad
+							<span class="price__desc--blue"> от&nbsp;295₽</span>
+						</p>
+					</figure>
+					<figure class="price__card">
+						<img
+							src="img/item-4.jpg"
+							alt="Чехол для телефона"
+							class="price__img"
+						/>
+						<p class="price__desc">
+							Чехлы Beckberg для IPhone
+							<span class="price__desc--blue"> от&nbsp;160₽</span>
+						</p>
+					</figure>
+					<figure class="price__card">
+						<img
+							src="img/item-5.jpg"
+							alt="Зорядные утсройства"
+							class="price__img"
+						/>
+						<p class="price__desc">
+							Кабели и зарядные устройства
+							<span class="price__desc--blue"> от&nbsp;35₽</span>
+						</p>
+					</figure>
+					<figure class="price__card">
+						<img
+							src="img/item-6.jpg"
+							alt="Популярные
+              товары"
+							class="price__img"
+						/>
+						<p class="price__desc">
+							Популярные товары
+							<span class="price__desc--blue"> от&nbsp;95₽</span>
+						</p>
+					</figure>
+					<figure class="price__card">
+						<img
+							src="img/item-7.jpg"
+							alt="Чехол для телефона"
+							class="price__img"
+						/>
+						<p class="price__desc">
+							Чехлы для Xiaomi
+							<span class="price__desc--blue"> от&nbsp;165₽</span>
+						</p>
+					</figure>
+					<figure class="price__card">
+						<img src="img/item-8.jpg" alt="Аккумуляторы" class="price__img" />
+						<p class="price__desc">
+							Дополнительные аккумуляторы
+							<span class="price__desc--blue"> от&nbsp;185₽</span>
+						</p>
+					</figure>
+				</div>
+				<div class="form-box container">
+					<div class="form form--bg-2 form--border">
+						<h2 class="form__heading">
+							<span class="form__heading-text-1"
+								>Получите доступ к оптовым ценам</span
+							>
+							<span class="form__heading-text-2">
+								+ маркетинговые материалы и систему продаж для вашего бизнеса
+							</span>
+						</h2>
+						<form action="#" class="form__lead">
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Введите e-mail"
+								class="form__input input--size-s input--margin-s"
+							/>
+							<input
+								type="tel"
+								name="phone"
+								id="phone2"
+								placeholder="Введите телефон"
+								class="form__input input--size-s input--margin-s"
+							/>
+							<input
+								type="submit"
+								value="Получить доступ"
+								class="form__submit btn--gradient input--size-m "
+							/>
+						</form>
+						<span class="form__policy">
+							Ваши данные не будут переданы третьим лицам
+						</span>
+					</div>
+				</div>
+			</section>
+			<section class="section profit ">
+				<h3 class="section__heading">Сотрудничая с нами вы получаете:</h3>
+				<div class="card-box container">
+					<figure class="profit__card">
+						<img
+							src="img/icon-home.png"
+							alt="Все в наличии"
+							class="profit__img"
+						/>
+						<h5 class="profit__heading">Все в наличии</h5>
+						<p class="profit__desc">
+							Большие запасы на складах, порядка 500.000 аксессуаров. Площадь
+							складов 1000 м2
+						</p>
+					</figure>
+					<figure class="profit__card">
+						<img
+							src="img/icon-money.png"
+							alt="Высокая наценка"
+							class="profit__img"
+						/>
+						<h5 class="profit__heading">Высокая наценка</h5>
+						<p class="profit__desc">
+							Работая с нами, Вы можете наценивать 300-500% на рознице
+						</p>
+					</figure>
+					<figure class="profit__card">
+						<img src="img/icon-drive.png" alt="Доставка" class="profit__img" />
+						<h5 class="profit__heading">Доставка</h5>
+						<p class="profit__desc">
+							Бесплатная авто и авиадоставка по России и СНГ
+						</p>
+					</figure>
+					<figure class="profit__card">
+						<img
+							src="img/icon-securiry.png"
+							alt="Гарантии"
+							class="profit__img"
+						/>
+						<h5 class="profit__heading">Гарантии</h5>
+						<p class="profit__desc">
+							Даем гарантию на качество товара и заводского брака. Замена на
+							аналогичный товар
+						</p>
+					</figure>
+					<figure class="profit__card">
+						<img src="img/icon-24h.png" alt="Поддержка" class="profit__img" />
+						<h5 class="profit__heading">Поддержка</h5>
+						<p class="profit__desc">
+							Помогли открыть более 550 розничных магазина. Предоставляем
+							фотобанк для интернет-магазинов
+						</p>
+					</figure>
+					<figure class="profit__card">
+						<img
+							src="img/icon-image.png"
+							alt="Качественные фото"
+							class="profit__img"
+						/>
+						<h5 class="profit__heading">Качественные фото</h5>
+						<p class="profit__desc">
+							Своя профессиональная фото-студия. Предоставляем более 18.000
+							высококачественных фотографий
+						</p>
+					</figure>
+					<figure class="profit__card">
+						<img src="img/icon-buy.png" alt="Надёжность" class="profit__img" />
+						<h5 class="profit__heading">Надёжность</h5>
+						<p class="profit__desc">
+							10 лет успешной работы, 15.000 довольных партнеров и 110.000.000
+							отгруженных аксессуаров
+						</p>
+					</figure>
+				</div>
+			</section>
+			<section class="section partners">
+				<h2 class="section__heading">C нами работают</h2>
+				<div class="partners-box container">
+					<img src="img/prtn-1.png" alt="Цифролайт" class="partners__img" />
+					<img src="img/prtn-2.png" alt="A-Pack" class="partners__img" />
+					<img src="img/prtn-3.png" alt="Store77" class="partners__img" />
+					<img src="img/prtn-4.png" alt="ICases" class="partners__img" />
+					<img src="img/prtn-5.png" alt="VseMaykiRu" class="partners__img" />
+					<img src="img/prtn-6.png" alt="Мосхозторг" class="partners__img" />
+					<img src="img/prtn-7.png" alt="I cult" class="partners__img" />
+					<img src="img/prtn-8.png" alt="Gb Shop" class="partners__img" />
+					<img src="img/prtn-9.png" alt="Apple Market" class="partners__img" />
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

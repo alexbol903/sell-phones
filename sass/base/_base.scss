@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	// This defines what 1rem is
+	font-size: 62.5%; // 1rem = 10px;
+
+	@include respond(desktop) {
+		font-size: 56.25%;
+	}
+	@include respond(tab-land) {
+		font-size: 50%;
+	}
+}
+
+body {
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+	user-select: none;
+}
+
+a {
+	outline-color: $color-secondary;
+	outline-offset: 0.5rem;
+}
+
+.container {
+	max-width: 108.8rem;
+	margin: 0 auto;
+	@include respond(desktop) {
+		padding: 0 1rem;
+	}
+}
+
+::selection {
+	background-color: $color-secondary;
+	color: $color-white;
+}

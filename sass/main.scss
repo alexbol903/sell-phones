@@ -1,0 +1,19 @@
+@import "utils/mixins";
+@import "utils/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+
+@import "components/button";
+@import "components/baner";
+@import "components/price";
+@import "components/profit";
+@import "components/partners";
+
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/form";
+@import "layout/footer";
+
+@import "pages/home";

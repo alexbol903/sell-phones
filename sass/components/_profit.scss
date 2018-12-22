@@ -1,0 +1,37 @@
+.profit {
+	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 10rem;
+		width: 23rem;
+	}
+
+	&__heading {
+		text-transform: uppercase;
+		font-size: 1.8em;
+		font-weight: 700;
+		margin-top: 1rem;
+		margin-bottom: 0.8rem;
+		color: $color-black;
+	}
+
+	&__desc {
+		font-size: 1.4rem;
+		font-weight: 500;
+		color: $color-blue-light;
+		text-align: center;
+	}
+}
+
+.card-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+	@include respond(450) {
+		flex-direction: column;
+		align-items: center;
+	}
+}

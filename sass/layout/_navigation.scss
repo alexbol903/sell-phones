@@ -1,0 +1,134 @@
+.nav {
+	background-color: $color-white;
+	color: $color-black;
+	&__checkbox {
+		display: none;
+	}
+	&-container {
+		display: flex;
+		align-items: center;
+		position: relative;
+		@include respond(750) {
+			height: 0;
+		}
+	}
+
+	&__checkbox:checked ~ .menu {
+		@include respond(750) {
+			opacity: 1;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, 0);
+			width: 60%;
+			z-index: 1000;
+			background-color: $color-white;
+			flex-direction: column;
+			align-items: center;
+			border-bottom-right-radius: 3rem;
+			border-bottom-left-radius: 3rem;
+			padding: 2rem 0;
+		}
+	}
+
+	&__button {
+		display: none;
+		@include respond(750) {
+			display: block;
+			z-index: 2000;
+			color: #000;
+		}
+	}
+}
+
+.menu {
+	transition: all 0.3s;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	width: 100%;
+	@include respond(750) {
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		opacity: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		z-index: -1;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+	}
+
+	&__link {
+		&,
+		&:link,
+		&:visited {
+			text-transform: uppercase;
+			cursor: pointer;
+			font-size: 1.4rem;
+			font-weight: 600;
+			color: inherit;
+			text-decoration: none;
+			padding: 1rem 0.6rem 1rem 0.6rem;
+			border-bottom: 0.4rem solid $color-white;
+			transition: all 0.2s;
+			@include respond(750) {
+				font-size: 1.6rem;
+			}
+
+			&:hover {
+				border-bottom: 0.4rem solid $color-secondary;
+				color: $color-secondary;
+			}
+			&:active {
+				transform: scale(0.97);
+			}
+		}
+	}
+}
+
+.ham {
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	transition: transform 400ms;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	display: none;
+	order: 1;
+	@include respond(750) {
+		display: block;
+		position: absolute;
+		top: -1rem;
+		right: -0.6rem;
+	}
+}
+.hamRotate.active {
+	transform: rotate(45deg);
+	stroke: $color-white;
+}
+
+.line {
+	fill: none;
+	transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+	stroke: $color-white;
+	stroke-width: 5.5;
+	stroke-linecap: round;
+}
+.ham4 .top {
+	stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+	stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+	stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+	stroke-dashoffset: -68px;
+}
