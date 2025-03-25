@@ -2,5 +2,5 @@
 	"name": "point",
 	"version": "1.0.0",
 	"description": "point app",
-	"main": "index.js",
+	"main": "index.js"
 }
